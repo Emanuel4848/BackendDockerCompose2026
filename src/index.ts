@@ -10,7 +10,10 @@ app.use(express.json());
 
 app.use("/auth", authRoutes);
 app.get("/", (req, res) => {
-  res.send("Hola mundo");
+  res.json({
+    message: "Hola mundo",
+    environment: process.env.NODE_ENV || "development"
+  });
 });
 
 
