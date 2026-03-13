@@ -5,7 +5,7 @@ export const sequelize = new Sequelize({
   database: "mydb",
   username: "admin",
   password: "admin123",
-  host: "postgresql", //nombre del servicio Docker
+  host: "postgresql", //nombre del servicio Docker postgresql admin123 admin mydb postgres
   dialect: "postgres",
   models: [Usuario],
   logging: false,
